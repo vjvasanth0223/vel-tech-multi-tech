@@ -1,0 +1,62 @@
+.top-header {
+    background-color: rgb(2, 2, 46);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .header-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header-links li {
+    margin-right: 15px;
+  }
+  
+  .header-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .contact-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .phone-icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .main-header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .header-sub {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align logos to the left */
+    gap: 10px; /* Adds space between the logos */
+  }
+  
+  .small-logo,
+  .logo {
+    height: 50px; /* Adjust height to medium size */
+    width: auto;  /* Maintains aspect ratio */
+  }
+  

@@ -1,0 +1,298 @@
+/* HomePageContent.css */
+
+/* Ticker Container */
+/* HomePageContent.css */
+
+/* Other existing styles */
+
+.ticker-container {
+    padding: 0 2rem; /* Add white space on left and right sides */
+    background-color: #ffffff; /* Optional: background color to highlight the ticker */
+  }
+  
+  .ticker {
+    background-color: #003366; /* Adjust as needed */
+    color: #ffffff;
+    padding: 0.5rem 1rem; /* Reduced height */
+    font-size: 1rem; /* Adjust as needed */
+    white-space: nowrap; /* Ensures text doesn't wrap */
+    overflow: hidden; /* Hides any overflow */
+  }
+  
+  .ticker p {
+    margin: 0; /* Remove default margin */
+    display: inline-block; /* Ensures text scrolls horizontally */
+    animation: ticker-scroll 35s linear infinite; /* Adjust duration as needed */
+  }
+  
+  @keyframes ticker-scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  
+  /* Image Slider */
+  .slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .image-slider {
+    position: relative;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover; /* Maintain image aspect ratio */
+    border-radius: 10px;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+  
+  .arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .arrow-left {
+    left: 10px;
+  }
+  
+  .arrow-right {
+    right: 10px;
+  }
+  
+  .dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dot.active,
+  .dot:hover {
+    background-color: #001f3f; /* Navy blue when active or hovered */
+  }
+  
+  /* Video Section */
+  /* HomePageContent.css */
+
+/* Other existing styles */
+
+/* Video Section */
+.highlights-title {
+    font-size: 2rem;
+    margin: 2rem 0;
+    color: #003366; /* Adjust based on your color scheme */
+    text-align: center;
+  }
+  
+  .video-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem; /* Space between iframes */
+    margin: 0 auto;
+  }
+  
+  .video-section iframe {
+    border: none; /* Remove default border */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions for hover effects */
+    max-width: 100%;
+    width: 360px; /* Adjust as needed */
+    height: 240px; /* Adjust as needed */
+  }
+  
+  /* Hover Effect for iframes */
+  .video-section iframe:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+  
+  
+  /* HomePageContent.css */
+
+/* HomePageContent.css */
+
+/* Container for About College and Highlights Sections */
+.home-page-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem; /* Space between the two sections */
+    padding: 2rem;
+    max-width: 1200px; /* Adjust based on your layout */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  /* About the College Section */
+/* HomePageContent.css */
+
+/* Container for About College and Highlights Sections */
+/* HomePageContent.css */
+
+/* Container for About College and Highlights Sections */
+.home-page-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    gap: 2rem; /* Space between the two sections */
+    max-width: 1200px; /* Adjust based on your layout */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  /* About the College Section */
+  .section.about-college {
+    flex: 1;
+    background-color: #004d00; /* Dark green background */
+    color: #ffffff; /* White text color */
+    padding: 1.5rem;
+    border-radius: 8px;
+    font-family: 'Times New Roman', serif; /* Times New Roman font */
+    line-height: 1.6; /* Spacing between lines */
+  }
+  
+  /* Highlights Section */
+  .section.highlights {
+    flex: 1;
+    background: linear-gradient(to bottom, #ffff99, #ffcc00, #ff9900); /* Multicolored gradient background */
+    padding: 1.5rem;
+    border-radius: 8px;
+    color: #003366; /* Text color */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Scroll Effect for Highlights */
+  .section.highlights ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .section.highlights li {
+    margin-bottom: 1.5rem; /* Spacing between items */
+    padding-left: 2rem; /* Space for the arrow */
+    font-size: 1rem; /* Adjust font size as needed */
+    line-height: 1.6; /* Spacing between lines */
+    position: relative; /* For absolute positioning of arrow */
+  }
+  
+  /* Arrow for Highlights */
+  .section.highlights li::before {
+    content: '➤'; /* Arrow symbol */
+    font-size: 1.2rem; /* Adjust arrow size */
+    color: #003366; /* Arrow color */
+    position: absolute;
+    left: 0;
+    top: 0; /* Align with text */
+  }
+  
+  /* Ensuring full coverage for background colors */
+  .section-about-college,
+  .section-highlights {
+    box-sizing: border-box;
+  }
+  
+  
+  
+  /* HomePageContent.css */
+
+/* Other existing styles */
+
+/* HomePageContent.css */
+
+/* Other existing styles */
+
+/* Rewards and Recognition Container */
+.rewards-recognition-container {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 1200px; /* Adjust based on your layout */
+    text-align: center;
+  }
+  
+  .rewards-recognition-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #003366; /* Adjust based on your color scheme */
+  }
+  
+  .rewards-recognition-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem; /* Space between images */
+  }
+  
+  .rewards-recognition-image {
+    width: 140px; /* Adjust as needed */
+    height: 140px; /* Ensure aspect ratio is maintained */
+    border: 2px solid rgba(0, 0, 0, 0.2); /* Subtle border for better visibility */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .rewards-recognition-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Ensures images fit within the container */
+  }
+  
+  /* Hover Effect */
+  .rewards-recognition-image:hover {
+    transform: scale(1.1); /* Slightly enlarge the image on hover */
+    box-shadow: 0 6px 12px rgb(255, 255, 255); /* Enhance shadow on hover */
+    border-color: #01070d; /* Change border color on hover (optional) */
+  }
+  
+  .rewards-recognition-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2); /* Slight overlay effect */
+    opacity: 0;
+    transition: opacity 0.0s; /* Smooth transition for overlay effect */
+  }
+  
+  .rewards-recognition-image:hover::before {
+    opacity: 1; /* Show overlay effect on hover */
+  }
+  
