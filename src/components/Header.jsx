@@ -32,6 +32,16 @@ const Header = () => {
           <img src="./emblem.png" alt="Vel Tech Logo" className="small-logo" />
           <img src="/vtmt text logo.png" alt="Vel Tech Text" className="logo" />
         </div>
+        <nav className="main-menu">
+          <a href="#home">Home</a>
+          <a href="www.facebook.com">Admission</a>
+          <a href="#academics">Academics</a>
+          <a href="#coe">COE</a>
+          <a href="#placements">Placements</a>
+          <a href="#campus-life">Campus Life</a>
+          <a href="#contact">Contact</a>
+          <a href=""> </a>
+        </nav>
       </header>
     </>
   );

@@ -1,3 +1,4 @@
+/* Existing Top Header Styles */
 .top-header {
     background-color: rgb(2, 2, 46);
     display: flex;
@@ -40,11 +41,13 @@
     height: 16px;
   }
   
+  /* Existing Main Header Styles */
   .main-header {
     background-color: white;
     display: flex;
     align-items: center;
     padding: 10px 20px;
+    position: relative; /* To position the menu properly */
   }
   
   .header-sub {
@@ -58,5 +61,24 @@
   .logo {
     height: 50px; /* Adjust height to medium size */
     width: auto;  /* Maintains aspect ratio */
+  }
+  
+  /* New Menu Styles */
+  .main-menu {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Space between menu items */
+    margin-left: auto; /* Align menu to the right */
+  }
+  
+  .main-menu a {
+    color: rgb(6, 21, 98); /* Dark Navy Blue */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .main-menu a:hover {
+    color: rgb(120, 4, 4); /* Red on hover */
+    text-decoration: underline;
   }
   

@@ -280,17 +280,7 @@
     border-color: #01070d; /* Change border color on hover (optional) */
   }
   
-  .rewards-recognition-image::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.2); /* Slight overlay effect */
-    opacity: 0;
-    transition: opacity 0.0s; /* Smooth transition for overlay effect */
-  }
+
   
   .rewards-recognition-image:hover::before {
     opacity: 1; /* Show overlay effect on hover */
