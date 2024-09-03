@@ -17,11 +17,11 @@ const Header = () => {
           </ul>
           <div className="contact-info">
             <img
-              src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Phone_icon.png"
+              src="https://cdn4.iconfinder.com/data/icons/social-media-2097/94/phone-1024.png"
               alt="Phone Icon"
               className="phone-icon"
             />
-            <span>1800 100 100</span>
+            <span>+91 7358701999</span>
           </div>
         </div>
       </header>

@@ -1,96 +1,106 @@
 .footer {
-    background-color: #001f3f; /* Navy blue background */
-    color: #ffffff; /* Set all text to white */
-    padding: 30px 20px 0; /* Top padding only */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    background-color: #003366;
+    color: #fff;
+    padding: 2rem 1rem;
   }
   
   .footer-content {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 1200px; /* Keeps the content centered and neat */
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 1rem;
   }
   
   .footer-logo {
-    width: 100px; /* Set logo size to medium */
-    height: 100px; /* Match width for a round shape */
-    border-radius: 50%; /* Make the logo round */
-    margin-bottom: 10px;
+    width: 150px;
+    margin-bottom: 1rem;
   }
   
-  .quick-links,
-  .useful-links,
-  .contact-info {
-    max-width: 300px; /* Limit the width to maintain a neat structure */
-  }
-  
-  .footer h4 {
-    margin-bottom: 10px;
-    font-size: 18px;
-  }
-  
-  .footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer ul li {
-    margin-bottom: 8px;
-  }
-  
-  .footer a {
-    color: #ffffff; /* White links */
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .footer a:hover {
-    text-decoration: underline; /* Subtle underline on hover */
-  }
-  
-  .contact-info p {
-    margin: 5px 0;
-  }
-  
-  .copyright {
-    background-color: #001F3F; /* Matching background to keep consistent */
-    color: #87CEFA; /* Light blue text color */
-    padding: 10px 0; /* Padding only for top and bottom */
-    width: 100%;
-    margin: 0; /* No margin for a neat look */
+  .social-media-section {
     text-align: center;
-    font-size: 14px; /* Slightly smaller font */
-  }
-  
-  /* Social Media Icons Styling */
-  .social-media {
-    max-width: 300px;
-  }
-  
-  .social-media h4 {
-    margin-bottom: 10px;
-    font-size: 18px;
   }
   
   .social-icons {
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    gap: 1rem;
   }
   
   .social-icons img {
-    width: 24px; /* Medium icon size */
-    height: 24px; /* Match width for a square shape */
+    width: 30px;
+    height: 30px;
     transition: transform 0.3s;
   }
   
   .social-icons img:hover {
-    transform: scale(1.1); /* Slightly increase size on hover */
+    transform: scale(1.1);
+  }
+  
+  .quick-links-section,
+  .useful-links-section,
+  .contact-info-section,
+  .map-section {
+    text-align: left;
+  }
+  
+  .quick-links-section ul,
+  .useful-links-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .quick-links-section li,
+  .useful-links-section li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .quick-links-section a,
+  .useful-links-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .quick-links-section a:hover,
+  .useful-links-section a:hover {
+    color: #ffcc00;
+  }
+  
+  .contact-info-section p {
+    margin: 0.5rem 0;
+  }
+  
+  .contact-info-section a {
+    color: #ffcc00;
+    text-decoration: none;
+  }
+  
+  .contact-info-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .map-section {
+    margin: 1rem 0;
+  }
+  
+  .map-section h4 {
+    margin-bottom: 0.5rem;
+  }
+  
+  iframe {
+    border: none;
+  }
+  
+  .footer .copyright {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.8rem;
   }
   
