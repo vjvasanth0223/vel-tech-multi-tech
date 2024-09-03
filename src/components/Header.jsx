@@ -30,7 +30,9 @@ const Header = () => {
       <header className="main-header">
         <div className="header-sub">
           <img src="./emblem.png" alt="Vel Tech Logo" className="small-logo" />
+          <img src="/25th-Logo.jpeg" alt="Vel Tech Text" className="logo" />
           <img src="/vtmt text logo.png" alt="Vel Tech Text" className="logo" />
+          
         </div>
         <nav className="main-menu">
           <a href="#home">Home</a>
